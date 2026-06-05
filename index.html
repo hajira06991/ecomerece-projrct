@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brand - eCommerce</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <!-- Logo → index.html -->
+        <div class="logo">
+          <a href="index.html"><img src="images/logo-colored.png" alt="Brand" style="height:36px;"/></a>
+        </div>
+        <div class="search-bar">
+          <input type="text" id="searchInput" placeholder="Search" />
+          <select>
+            <option>All category</option>
+            <option>Electronics</option>
+            <option>Clothing</option>
+            <option>Books</option>
+          </select>
+          <button class="btn-search">Search</button>
+        </div>
+        <div class="header-icons">
+          <div class="icon-item"><i class="fa-regular fa-user"></i><span>Profile</span></div>
+          <div class="icon-item"><i class="fa-regular fa-comment-dots"></i><span>Message</span></div>
+          <div class="icon-item"><i class="fa-regular fa-clipboard"></i><span>Orders</span></div>
+          <div class="icon-item"><i class="fa-solid fa-cart-shopping"></i><span>My cart</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <nav class="nav-links">
+          <!-- All category → products.html -->
+          <a href="products.html"><i class="fa-solid fa-bars"></i> All category</a>
+          <a href="products.html">Hot offers</a>
+          <a href="products.html">Gift boxes</a>
+          <a href="#">Projects</a>
+          <a href="#">Menu item</a>
+          <a href="#">Help <i class="fa-solid fa-chevron-down"></i></a>
+        </nav>
+        <div class="nav-right">
+          <span><i class="fa-solid fa-globe"></i> English, USD <i class="fa-solid fa-chevron-down"></i></span>
+          <span><img src="images/DE@2x.png" style="height:16px;display:inline;vertical-align:middle;"> Ship to <i class="fa-solid fa-chevron-down"></i></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="container hero-container">
+
+      <!-- Left: Categories → products.html -->
+      <div class="hero-categories">
+        <ul>
+          <li class="active"><a href="products.html">Automobiles</a></li>
+          <li><a href="products.html">Clothes and wear</a></li>
+          <li><a href="products.html">Home interiors</a></li>
+          <li><a href="products.html">Computer and tech</a></li>
+          <li><a href="products.html">Tools, equipments</a></li>
+          <li><a href="products.html">Sports and outdoor</a></li>
+          <li><a href="products.html">Animal and pets</a></li>
+          <li><a href="products.html">Machinery tools</a></li>
+          <li><a href="products.html">More category</a></li>
+        </ul>
+      </div>
+
+      <!-- Middle: Banner -->
+      <div class="hero-banner" style="background-image: url('images/Banner-board-800x420 2.png'); background-size: cover; background-position: center;">
+        <p>Latest trending</p>
+        <h1>Electronic <br/>items</h1>
+        <a href="products.html"><button class="btn-learn">Learn more</button></a>
+        <div class="hero-bg-circle"></div>
+      </div>
+
+      <!-- Right: User Panel -->
+      <div class="hero-right">
+        <div class="user-card">
+          <div class="user-avatar"><i class="fa-regular fa-user"></i></div>
+          <p>Hi, user<br/><strong>let's get started</strong></p>
+          <button class="btn-join">Join now</button>
+          <button class="btn-login">Log in</button>
+        </div>
+        <div class="promo-card orange">
+          <p>Get US $10 off<br/>with a new supplier</p>
+        </div>
+        <div class="promo-card blue">
+          <p>Send quotes with supplier preferences</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== DEALS SECTION ===== -->
+  <section class="deals-section">
+    <div class="container deals-container">
+      <div class="deals-header">
+        <div>
+          <h3>Deals and offers</h3>
+          <p>Hygiene equipments</p>
+        </div>
+        <div class="countdown">
+          <div class="count-box"><span>04</span><small>Days</small></div>
+          <div class="count-box"><span>13</span><small>Hour</small></div>
+          <div class="count-box"><span>34</span><small>Min</small></div>
+          <div class="count-box"><span>56</span><small>Sec</small></div>
+        </div>
+      </div>
+      <!-- Deal Cards → products.html -->
+      <div class="deals-grid">
+        <a href="products.html" style="text-decoration:none;color:inherit;">
+          <div class="deal-card">
+            <img src="images/image 32.png" alt="Smart watch"/>
+            <p>Smart watches</p>
+            <span class="badge red">-25%</span>
+          </div>
+        </a>
+        <a href="products.html" style="text-decoration:none;color:inherit;">
+          <div class="deal-card">
+            <img src="images/image 34.png" alt="Laptop"/>
+            <p>Laptops</p>
+            <span class="badge red">-15%</span>
+          </div>
+        </a>
+        <a href="products.html" style="text-decoration:none;color:inherit;">
+          <div class="deal-card">
+            <img src="images/image 29.png" alt="GoPro"/>
+            <p>GoPro cameras</p>
+            <span class="badge red">-40%</span>
+          </div>
+        </a>
+        <a href="products.html" style="text-decoration:none;color:inherit;">
+          <div class="deal-card">
+            <img src="images/image 85.png" alt="Headphones"/>
+            <p>Headphones</p>
+            <span class="badge red">-25%</span>
+          </div>
+        </a>
+        <a href="products.html" style="text-decoration:none;color:inherit;">
+          <div class="deal-card">
+            <img src="images/image 23.png" alt="Camera"/>
+            <p>Canon cameras</p>
+            <span class="badge red">-25%</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORIES SECTIONS ===== -->
+  <section class="categories-section">
+    <div class="container">
+
+      <!-- Home and Outdoor → products.html -->
+      <div class="category-block">
+        <div class="category-label green" style="background-image:url('images/Group\ 969.png'); background-size:cover; background-position:center;">
+          <h3>Home and outdoor</h3>
+          <a href="products.html"><button class="btn-source">Source now</button></a>
+        </div>
+        <div class="category-products">
+          <a href="products.html" style="text-decoration:none;color:inherit;"><div class="cat-product"><img src="images/1.png" alt=""/><p>Soft chairs</p><small>From USD 19</small></div></a>
+          <a href="products.html" style="text-decoration:none;color:inherit;"><div class="cat-product"><img src="images/image 93.png" alt=""/><p>Sofa & chair</p><small>From USD 19</small></div></a>
+          <a href="products.html" style="text-decoration:none;color:inherit;"><div class="cat-product"><img src="images/image 89.png" alt=""/><p>Kitchen dishes</p><small>From USD 19</small></div></a>
+          <a href="products.html" style="text-decoration:none;color:inherit;"><div class="cat-product"><img src="images/image 32.png" alt=""/><p>Smart watches</p><small>From USD 18</small></div></a>
+          <a href="products.html" style="text-decoration:none;color:inherit;"><div class="cat-product"><img src="images/9.png" alt=""/><p>Kitchen mixer</p><small>From USD 100</small></div></a>
+          <a href="products.html" style="text-decoration:none;color:inherit;"><div class="cat-product"><img src="images/image 89.png" alt=""/><p>Blenders</p><small>From USD 39</small></div></a>
+          <a href="products.html" style="text-decoration:none;color:inherit;"><div class="cat-product"><img src="images/9.png" alt=""/><p>Home appliance</p><small>From USD 19</small></div></a>
+          <a href="products.html" style="text-decoration:none;color:inherit;"><div class="cat-product"><img src="images/image 89.png" alt=""/><p>Coffee maker</p><small>From USD 10</small></div></a>
+        </div>
+      </div>
+
+      <!-- Consumer Electronics → products.html -->
+      <div class="category-block">
+        <div class="category-label pink" style="background-image:url('images/image\ 98.png'); background-size:cover; background-position:center;">
+          <h3>Consumer electronics and gadgets</h3>
+          <a href="products.html"><button class="btn-source">Source now</button></a>
+        </div>
+        <div class="category-products">
+          <a href="products.html" style="text-decoration:none;color:inherit;"><div class="cat-product"><img src="images/image 32.png" alt=""/><p>Smart watches</p><small>From USD 19</small></div></a>
+          <a href="products.html" style="text-decoration:none;color:inherit;"><div class="cat-product"><img src="images/image 23.png" alt=""/><p>Cameras</p><small>From USD 89</small></div></a>
+          <a href="products.html" style="text-decoration:none;color:inherit;"><div class="cat-product"><img src="images/image 85.png" alt=""/><p>Headphones</p><small>From USD 70</small></div></a>
+          <a href="products.html" style="text-decoration:none;color:inherit;"><div class="cat-product"><img src="images/watch.png2" alt=""/><p>Smart watches</p><small>From USD 90</small></div></a>
+          <a href="products.html" style="text-decoration:none;color:inherit;"><div class="cat-product"><img src="images/image 85.png" alt=""/><p>Gaming set</p><small>From USD 35</small></div></a>
+          <a href="products.html" style="text-decoration:none;color:inherit;"><div class="cat-product"><img src="images/image 34.png" alt=""/><p>Laptops & PC</p><small>From USD 340</small></div></a>
+          <a href="products.html" style="text-decoration:none;color:inherit;"><div class="cat-product"><img src="images/image 33.png" alt=""/><p>Smartphones</p><small>From USD 19</small></div></a>
+          <a href="products.html" style="text-decoration:none;color:inherit;"><div class="cat-product"><img src="images/image 89.png" alt=""/><p>Electric kettle</p><small>From USD 240</small></div></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== QUOTE BANNER ===== -->
+  <section class="quote-banner">
+    <div class="container quote-container">
+
+      <div class="quote-text">
+        <h2>An easy way to send requests to all suppliers</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt.
+        </p>
+      </div>
+
+      <div class="quote-form">
+        <h4>Send quote to suppliers</h4>
+        <input type="text" placeholder="What item you need?" class="quote-input">
+        <textarea placeholder="Type more details"></textarea>
+        <div class="quote-row">
+          <input type="number" placeholder="Quantity">
+          <select>
+            <option>Pcs</option>
+            <option>Kg</option>
+          </select>
+        </div>
+        <button class="btn-inquiry">Send inquiry</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== RECOMMENDED ITEMS ===== -->
+  <!-- JS se inject hone wale cards product-detail.html pe jayenge (main.js mein link add karo) -->
+  <section class="recommended-section">
+    <div class="container">
+      <h2>Recommended items</h2>
+      <div class="products-grid" id="productsGrid">
+        <!-- Products will be injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="newsletter-bar">
+      <div class="container newsletter-inner">
+        <div class="newsletter-text">
+          <h3>Subscribe on our newsletter</h3>
+          <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+        </div>
+        <div class="newsletter-form">
+          <input type="email" placeholder="✉ Email" />
+          <button class="btn-subscribe">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <a href="index.html" style="text-decoration:none;color:inherit;">
+              <i class="fa-solid fa-bag-shopping logo-icon"></i><span>Brand</span>
+            </a>
+          </div>
+          <p>Best information about the company goes here but now lorem ipsum is used.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>About</h4><ul><li><a href="#">About Us</a></li><li><a href="#">Find store</a></li><li><a href="products.html">Categories</a></li><li><a href="#">Blogs</a></li></ul></div>
+        <div class="footer-col"><h4>Partnership</h4><ul><li><a href="#">About Us</a></li><li><a href="#">Find store</a></li><li><a href="products.html">Categories</a></li><li><a href="#">Blogs</a></li></ul></div>
+        <div class="footer-col"><h4>Information</h4><ul><li><a href="#">Help Center</a></li><li><a href="#">Money Refund</a></li><li><a href="#">Shipping</a></li><li><a href="#">Contact us</a></li></ul></div>
+        <div class="footer-col"><h4>For users</h4><ul><li><a href="#">Login</a></li><li><a href="#">Register</a></li><li><a href="#">Settings</a></li><li><a href="#">My Orders</a></li></ul></div>
+        <div class="footer-col">
+          <h4>Get app</h4>
+          <div class="app-badges">
+            <a href="#" class="app-badge"><i class="fa-brands fa-apple"></i><div><small>Download on the</small><strong>App Store</strong></div></a>
+            <a href="#" class="app-badge"><i class="fa-brands fa-google-play"></i><div><small>GET IT ON</small><strong>Google Play</strong></div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© 2023 Ecommerce.</span>
+        <span>English <i class="fa-solid fa-chevron-up"></i></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
