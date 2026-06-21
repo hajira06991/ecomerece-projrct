@@ -386,7 +386,7 @@ width: 200px; }
 .listing-container { align-items: flex-start; gap: 20px; }
 
 /* Sidebar */
-.sidebar { width: 220px; flex-shrink: 0; background: var(--white); border-radius: 8px; padding: 16px; }
+.sidebar { width: 220px; flex-shrink: 0; flex-direction: column; background: var(--white); border-radius: 8px; padding: 16px; }
 .filter-group { margin-bottom: 20px; border-bottom: 1px solid var(--border); padding-bottom: 16px; }
 .filter-group:last-child { border-bottom: none; }
 .filter-title { font-size: 14px; font-weight: 700; margin-bottom: 10px; display: flex; justify-content: space-between; cursor: pointer; }
