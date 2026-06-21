@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brand - Products</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="listing-page">
+
+  <!-- ===== MOBILE-ONLY LISTING HEADER ===== -->
+  <header class="mobile-page-header mobile-only">
+    <a href="index.html" class="mobile-back-arrow"><i class="fa-solid fa-arrow-left"></i></a>
+    <h1>Mobile accessory</h1>
+  </header>
+  <div class="mobile-listing-search mobile-only">
+    <div class="search-bar-mobile"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search"/></div>
+    <div class="mobile-cat-pills">
+      <a href="#">Tablets</a>
+      <a href="#">Phones</a>
+      <a href="#">Ipads</a>
+      <a href="#">Ipod</a>
+      <a href="#">Jacket</a>
+    </div>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header desktop-header">
+    <div class="header-top">
+      <div class="container">
+        <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fa-solid fa-bars"></i></button>
+        <div class="logo">
+          <a href="index.html"><img src="images/logo-colored.png" alt="Brand" style="height:36px;"/></a>
+        </div>
+        <div class="search-bar">
+          <input type="text" id="searchInput" placeholder="Search" />
+          <select>
+            <option>All category</option>
+            <option>Electronics</option>
+            <option>Clothing</option>
+          </select>
+          <button class="btn-search">Search</button>
+        </div>
+        <div class="header-icons">
+          <div class="icon-item"><i class="fa-regular fa-user"></i><span>Profile</span></div>
+          <div class="icon-item"><i class="fa-regular fa-comment-dots"></i><span>Message</span></div>
+          <div class="icon-item"><i class="fa-regular fa-clipboard"></i><span>Orders</span></div>
+          <a href="cart.html" class="icon-item"><i class="fa-solid fa-cart-shopping"></i><span>My cart</span></a>
+        </div>
+        <div class="mobile-header-icons">
+          <a href="cart.html" class="icon-item"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count">3</span></a>
+          <div class="icon-item"><i class="fa-regular fa-user"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <nav class="nav-links">
+          <a href="#"><i class="fa-solid fa-bars"></i> All category</a>
+          <a href="#">Hot offers</a>
+          <a href="#">Gift boxes</a>
+          <a href="#">Projects</a>
+          <a href="#">Menu item</a>
+          <a href="#">Help <i class="fa-solid fa-chevron-down"></i></a>
+        </nav>
+        <div class="nav-right">
+          <span><i class="fa-solid fa-globe"></i> English, USD</span>
+          <span><img src="images/DE@2x.png" style="height:16px;display:inline;vertical-align:middle;"> Ship to</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== BREADCRUMB ===== -->
+  <div class="breadcrumb desktop-only-flex">
+    <div class="container">
+      <a href="index.html">Home</a> <i class="fa-solid fa-chevron-right"></i>
+      <a href="#">Clothings</a> <i class="fa-solid fa-chevron-right"></i>
+      <a href="#">Men's wear</a> <i class="fa-solid fa-chevron-right"></i>
+      <span>Summer clothing</span>
+    </div>
+  </div>
+
+  <!-- ===== PRODUCT LISTING ===== -->
+  <section class="listing-section">
+    <div class="container listing-container">
+
+      <!-- Sidebar Filters -->
+      <aside class="sidebar desktop-only-flex">
+
+        <div class="filter-group">
+          <div class="filter-title">Category <i class="fa-solid fa-chevron-up"></i></div>
+          <ul class="filter-list">
+            <li><a href="#">Mobile accessory</a></li>
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Smartphones</a></li>
+            <li><a href="#">Modern tech</a></li>
+            <li><a href="#" class="see-all">See all</a></li>
+          </ul>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-title">Brands <i class="fa-solid fa-chevron-up"></i></div>
+          <ul class="filter-list checkbox-list">
+            <li><label><input type="checkbox" checked/> Samsung</label></li>
+            <li><label><input type="checkbox" checked/> Apple</label></li>
+            <li><label><input type="checkbox"/> Huawei</label></li>
+            <li><label><input type="checkbox" checked/> Pocco</label></li>
+            <li><label><input type="checkbox"/> Lenovo</label></li>
+            <li><a href="#" class="see-all">See all</a></li>
+          </ul>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-title">Features <i class="fa-solid fa-chevron-up"></i></div>
+          <ul class="filter-list checkbox-list">
+            <li><label><input type="checkbox" checked/> Metallic</label></li>
+            <li><label><input type="checkbox"/> Plastic cover</label></li>
+            <li><label><input type="checkbox"/> 8GB Ram</label></li>
+            <li><label><input type="checkbox"/> Super power</label></li>
+            <li><label><input type="checkbox"/> Large Memory</label></li>
+            <li><a href="#" class="see-all">See all</a></li>
+          </ul>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-title">Price range <i class="fa-solid fa-chevron-down"></i></div>
+          <input type="range" min="0" max="999999" class="price-range"/>
+          <div class="price-inputs">
+            <input type="number" placeholder="Min" value="0"/>
+            <input type="number" placeholder="Max" value="999999"/>
+          </div>
+          <button class="btn-apply">Apply</button>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-title">Condition <i class="fa-solid fa-chevron-up"></i></div>
+          <ul class="filter-list radio-list">
+            <li><label><input type="radio" name="condition" checked/> Any</label></li>
+            <li><label><input type="radio" name="condition"/> Refurbished</label></li>
+            <li><label><input type="radio" name="condition"/> Brand new</label></li>
+            <li><label><input type="radio" name="condition"/> Old items</label></li>
+          </ul>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-title">Ratings <i class="fa-solid fa-chevron-up"></i></div>
+          <ul class="filter-list checkbox-list">
+            <li><label><input type="checkbox"/> ⭐⭐⭐⭐⭐</label></li>
+            <li><label><input type="checkbox"/> ⭐⭐⭐⭐</label></li>
+            <li><label><input type="checkbox"/> ⭐⭐⭐</label></li>
+            <li><label><input type="checkbox"/> ⭐⭐</label></li>
+          </ul>
+        </div>
+
+      </aside>
+
+      <!-- Products Area -->
+      <div class="products-area">
+
+        <!-- Top Bar (Desktop) -->
+        <div class="products-topbar desktop-only-flex">
+          <p><strong>12,911 items</strong> in Mobile accessory</p>
+          <div class="topbar-right">
+            <label><input type="checkbox"/> Verified only</label>
+            <select><option>Featured</option><option>Price Low</option><option>Price High</option></select>
+            <button class="view-btn active" id="gridBtn"><i class="fa-solid fa-grip"></i></button>
+            <button class="view-btn" id="listBtn"><i class="fa-solid fa-list"></i></button>
+          </div>
+        </div>
+
+        <!-- Top Bar (Mobile) -->
+        <div class="mobile-sort-filter-bar mobile-only">
+          <button class="msf-btn"><i class="fa-solid fa-arrow-down-short-wide"></i> Sort: Newest</button>
+          <button class="msf-btn"><i class="fa-solid fa-sliders"></i> Filter (3)</button>
+          <button class="msf-icon-btn active" id="mobileGridBtn"><i class="fa-solid fa-grip"></i></button>
+          <button class="msf-icon-btn" id="mobileListBtn"><i class="fa-solid fa-list"></i></button>
+        </div>
+        <div class="mobile-filter-chips mobile-only">
+          <span class="chip">Huawei <i class="fa-solid fa-xmark"></i></span>
+          <span class="chip">Apple <i class="fa-solid fa-xmark"></i></span>
+          <span class="chip">64GB <i class="fa-solid fa-xmark"></i></span>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid grid-view" id="productsContainer">
+          <!-- JS se inject hoga -->
+        </div>
+
+        <!-- You may also like (Mobile) -->
+        <div class="you-may-also-like-mobile mobile-only">
+          <h3>You may also like</h3>
+          <div class="products-grid" id="alsoLikeContainer"></div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination desktop-only-flex">
+          <span>Show</span>
+          <select><option>10</option><option>20</option><option>50</option></select>
+          <button class="page-btn"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="page-btn active">1</button>
+          <button class="page-btn">2</button>
+          <button class="page-btn">3</button>
+          <button class="page-btn"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="newsletter-bar">
+      <div class="container newsletter-inner">
+        <div class="newsletter-text">
+          <h3>Subscribe on our newsletter</h3>
+          <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+        </div>
+        <div class="newsletter-form">
+          <input type="email" placeholder="✉ Email" />
+          <button class="btn-subscribe">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="logo"><i class="fa-solid fa-bag-shopping logo-icon"></i><span>Brand</span></div>
+          <p>Best information about the company goes here but now lorem ipsum is used.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>About</h4><ul><li><a href="#">About Us</a></li><li><a href="#">Find store</a></li><li><a href="#">Categories</a></li><li><a href="#">Blogs</a></li></ul></div>
+        <div class="footer-col"><h4>Partnership</h4><ul><li><a href="#">About Us</a></li><li><a href="#">Find store</a></li><li><a href="#">Categories</a></li><li><a href="#">Blogs</a></li></ul></div>
+        <div class="footer-col"><h4>Information</h4><ul><li><a href="#">Help Center</a></li><li><a href="#">Money Refund</a></li><li><a href="#">Shipping</a></li><li><a href="#">Contact us</a></li></ul></div>
+        <div class="footer-col"><h4>For users</h4><ul><li><a href="#">Login</a></li><li><a href="#">Register</a></li><li><a href="#">Settings</a></li><li><a href="#">My Orders</a></li></ul></div>
+        <div class="footer-col">
+          <h4>Get app</h4>
+          <div class="app-badges">
+            <a href="#" class="app-badge"><i class="fa-brands fa-apple"></i><div><small>Download on the</small><strong>App Store</strong></div></a>
+            <a href="#" class="app-badge"><i class="fa-brands fa-google-play"></i><div><small>GET IT ON</small><strong>Google Play</strong></div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© 2023 Ecommerce.</span>
+        <span>English <i class="fa-solid fa-chevron-up"></i></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

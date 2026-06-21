@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brand - My Cart</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="cart-page">
+
+  <!-- ===== MOBILE-ONLY CART HEADER ===== -->
+  <header class="mobile-page-header mobile-only">
+    <a href="products.html" class="mobile-back-arrow"><i class="fa-solid fa-arrow-left"></i></a>
+    <h1>Shopping cart</h1>
+  </header>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header desktop-header">
+    <div class="header-top">
+      <div class="container">
+        <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fa-solid fa-bars"></i></button>
+        <div class="logo">
+          <a href="index.html"><img src="images/logo-colored.png" alt="Brand" style="height:36px;"/></a>
+        </div>
+        <div class="search-bar">
+          <input type="text" id="searchInput" placeholder="Search" />
+          <select>
+            <option>All category</option>
+            <option>Electronics</option>
+            <option>Clothing</option>
+            <option>Books</option>
+          </select>
+          <button class="btn-search">Search</button>
+        </div>
+        <div class="header-icons">
+          <div class="icon-item"><i class="fa-regular fa-user"></i><span>Profile</span></div>
+          <div class="icon-item"><i class="fa-regular fa-comment-dots"></i><span>Message</span></div>
+          <div class="icon-item"><i class="fa-regular fa-clipboard"></i><span>Orders</span></div>
+          <a href="cart.html" class="icon-item"><i class="fa-solid fa-cart-shopping"></i><span>My cart</span></a>
+        </div>
+        <div class="mobile-header-icons">
+          <a href="cart.html" class="icon-item"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count" id="mobileCartCount">3</span></a>
+          <div class="icon-item"><i class="fa-regular fa-user"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <nav class="nav-links">
+          <a href="products.html"><i class="fa-solid fa-bars"></i> All category</a>
+          <a href="products.html">Hot offers</a>
+          <a href="products.html">Gift boxes</a>
+          <a href="#">Projects</a>
+          <a href="#">Menu item</a>
+          <a href="#">Help <i class="fa-solid fa-chevron-down"></i></a>
+        </nav>
+        <div class="nav-right">
+          <span><i class="fa-solid fa-globe"></i> English, USD <i class="fa-solid fa-chevron-down"></i></span>
+          <span><img src="images/DE@2x.png" style="height:16px;display:inline;vertical-align:middle;"> Ship to <i class="fa-solid fa-chevron-down"></i></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== CART SECTION ===== -->
+  <section class="cart-section">
+    <div class="container">
+      <h2 class="cart-title">My cart (<span id="cartItemCount">3</span>)</h2>
+
+      <div class="cart-layout">
+
+        <!-- Cart Items -->
+        <div class="cart-items-col" id="cartItemsCol">
+
+          <div class="cart-item" data-id="1" data-price="78.99" data-unit-price="78.99">
+            <img src="images/shirt1.jfif" alt="T-shirt"/>
+            <div class="cart-item-info">
+              <div class="cart-item-info-top">
+                <h4>T-shirts in Grey color, for men and lady</h4>
+                <button class="cart-item-menu mobile-only"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+              </div>
+              <p class="item-meta">Size: medium, Color: blue, Material: Plastic</p>
+              <p class="item-meta">Seller: Artel Market</p>
+              <div class="cart-item-actions desktop-only-flex">
+                <button class="link-remove">Remove</button>
+                <button class="link-save">Save for later</button>
+              </div>
+              <div class="qty-stepper mobile-only">
+                <button class="qty-minus" type="button">−</button>
+                <input type="text" class="qty-input" value="2" readonly />
+                <button class="qty-plus" type="button">+</button>
+              </div>
+            </div>
+            <div class="cart-item-qty-price">
+              <span class="cart-item-price">$78.99</span>
+              <select class="qty-select desktop-only-flex">
+                <option>Qty: 1</option>
+                <option>Qty: 3</option>
+                <option selected>Qty: 9</option>
+                <option>Qty: 12</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="cart-item" data-id="2" data-price="39.00" data-unit-price="39.00">
+            <img src="images/2 1.png" alt="Backpack"/>
+            <div class="cart-item-info">
+              <div class="cart-item-info-top">
+                <h4>Brown velvet coat for women</h4>
+                <button class="cart-item-menu mobile-only"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+              </div>
+              <p class="item-meta">Size: medium, Color: blue, Material: Plastic</p>
+              <p class="item-meta">Seller: Best factory LLC</p>
+              <div class="cart-item-actions desktop-only-flex">
+                <button class="link-remove">Remove</button>
+                <button class="link-save">Save for later</button>
+              </div>
+              <div class="qty-stepper mobile-only">
+                <button class="qty-minus" type="button">−</button>
+                <input type="text" class="qty-input" value="1" readonly />
+                <button class="qty-plus" type="button">+</button>
+              </div>
+            </div>
+            <div class="cart-item-qty-price">
+              <span class="cart-item-price">$39.00</span>
+              <select class="qty-select desktop-only-flex">
+                <option>Qty: 1</option>
+                <option selected>Qty: 3</option>
+                <option>Qty: 9</option>
+                <option>Qty: 12</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="cart-item" data-id="3" data-price="170.50" data-unit-price="170.50">
+            <img src="images/Bitmap.png" alt="Wallet"/>
+            <div class="cart-item-info">
+              <div class="cart-item-info-top">
+                <h4>T-shirts with multiple colors, for men and lady</h4>
+                <button class="cart-item-menu mobile-only"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+              </div>
+              <p class="item-meta">Size: medium, Color: blue, Material: Plastic</p>
+              <p class="item-meta">Seller: Artel Market</p>
+              <div class="cart-item-actions desktop-only-flex">
+                <button class="link-remove">Remove</button>
+                <button class="link-save">Save for later</button>
+              </div>
+              <div class="qty-stepper mobile-only">
+                <button class="qty-minus" type="button">−</button>
+                <input type="text" class="qty-input" value="2" readonly />
+                <button class="qty-plus" type="button">+</button>
+              </div>
+            </div>
+            <div class="cart-item-qty-price">
+              <span class="cart-item-price">$170.50</span>
+              <select class="qty-select desktop-only-flex">
+                <option selected>Qty: 1</option>
+                <option>Qty: 3</option>
+                <option>Qty: 9</option>
+                <option>Qty: 12</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="cart-bottom-row desktop-only-flex">
+            <a href="products.html" class="btn-back-shop"><i class="fa-solid fa-arrow-left"></i> Back to shop</a>
+            <button class="btn-remove-all" id="removeAllBtn">Remove all</button>
+          </div>
+
+        </div>
+
+        <!-- Summary (Desktop version) -->
+        <div class="cart-summary-col desktop-only-flex">
+          <div class="coupon-card">
+            <p>Have a coupon?</p>
+            <div class="coupon-row">
+              <input type="text" placeholder="Add coupon"/>
+              <button class="btn-apply-coupon">Apply</button>
+            </div>
+          </div>
+
+          <div class="summary-card">
+            <div class="summary-row"><span>Subtotal:</span><span id="subtotalVal">$1403.97</span></div>
+            <div class="summary-row discount"><span>Discount:</span><span>- $60.00</span></div>
+            <div class="summary-row tax"><span>Tax:</span><span>+ $14.00</span></div>
+            <hr class="summary-divider"/>
+            <div class="summary-total"><span>Total:</span><span id="totalVal">$1357.97</span></div>
+            <button class="btn-checkout">Checkout</button>
+            <div class="payment-icons">
+              <i class="fa-brands fa-cc-amex"></i>
+              <i class="fa-brands fa-cc-mastercard"></i>
+              <i class="fa-brands fa-cc-paypal"></i>
+              <i class="fa-brands fa-cc-visa"></i>
+              <i class="fa-brands fa-apple-pay"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Summary (Mobile version) -->
+      <div class="mobile-cart-summary mobile-only">
+        <div class="summary-row"><span>Items (<span id="mobileItemCount">3</span>):</span><span id="mobileSubtotalVal">$32.00</span></div>
+        <div class="summary-row"><span>Shipping:</span><span>$10.00</span></div>
+        <div class="summary-row"><span>Tax:</span><span>$7.00</span></div>
+        <div class="summary-total"><span>Total:</span><span id="mobileTotalVal">$220.00</span></div>
+        <button class="btn-checkout-mobile">Checkout (<span id="mobileCheckoutCount">3</span> items)</button>
+      </div>
+
+      <!-- Trust badges -->
+      <div class="trust-badges desktop-only-flex">
+        <div class="trust-badge">
+          <div class="trust-badge-icon"><i class="fa-solid fa-lock"></i></div>
+          <div><strong>Secure payment</strong><span>Have you ever finally just</span></div>
+        </div>
+        <div class="trust-badge">
+          <div class="trust-badge-icon"><i class="fa-regular fa-comment-dots"></i></div>
+          <div><strong>Customer support</strong><span>Have you ever finally just</span></div>
+        </div>
+        <div class="trust-badge">
+          <div class="trust-badge-icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <div><strong>Free delivery</strong><span>Have you ever finally just</span></div>
+        </div>
+      </div>
+
+      <!-- Saved for later -->
+      <div class="saved-section">
+        <h3>Saved for later</h3>
+        <div class="saved-grid desktop-only-grid" id="savedGrid">
+          <!-- JS se inject hoga (desktop grid cards) -->
+        </div>
+        <div class="saved-list-mobile mobile-only" id="savedListMobile">
+          <!-- JS se inject hoga (mobile horizontal cards) -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== DISCOUNT BANNER ===== -->
+  <section class="discount-banner">
+    <div class="container discount-inner">
+      <div>
+        <h3>Super discount on more than 100 USD</h3>
+        <p>Have you ever finally just write dummy info</p>
+      </div>
+      <a href="products.html"><button class="btn-shop">Shop now</button></a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <a href="index.html" style="text-decoration:none;color:inherit;">
+              <i class="fa-solid fa-bag-shopping logo-icon"></i><span>Brand</span>
+            </a>
+          </div>
+          <p>Best information about the company goes here but now lorem ipsum is used.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>About</h4><ul><li><a href="#">About Us</a></li><li><a href="#">Find store</a></li><li><a href="products.html">Categories</a></li><li><a href="#">Blogs</a></li></ul></div>
+        <div class="footer-col"><h4>Partnership</h4><ul><li><a href="#">About Us</a></li><li><a href="#">Find store</a></li><li><a href="products.html">Categories</a></li><li><a href="#">Blogs</a></li></ul></div>
+        <div class="footer-col"><h4>Information</h4><ul><li><a href="#">Help Center</a></li><li><a href="#">Money Refund</a></li><li><a href="#">Shipping</a></li><li><a href="#">Contact us</a></li></ul></div>
+        <div class="footer-col"><h4>For users</h4><ul><li><a href="#">Login</a></li><li><a href="#">Register</a></li><li><a href="#">Settings</a></li><li><a href="#">My Orders</a></li></ul></div>
+        <div class="footer-col">
+          <h4>Get app</h4>
+          <div class="app-badges">
+            <a href="#" class="app-badge"><i class="fa-brands fa-apple"></i><div><small>Download on the</small><strong>App Store</strong></div></a>
+            <a href="#" class="app-badge"><i class="fa-brands fa-google-play"></i><div><small>GET IT ON</small><strong>Google Play</strong></div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© 2023 Ecommerce.</span>
+        <span>English <i class="fa-solid fa-chevron-up"></i></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
